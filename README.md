@@ -1,14 +1,14 @@
 # New non-Euclidean neural quantum states from additional types of hyperbolic recurrent neural networks
 
-This repo contains the codes and trained neural network weights for the work 2604.24337 (https://arxiv.org/2604.24337v1). 
+This repo contains the codes and trained neural network weights for the work 2604.24337 (https://arxiv.org/2604.24337v1). In this work, we construct three new variants of hyperbolic neural quantum states (NQS): Poincare RNN, Lorentz RNN, Lorentz GRU, alongside the previously introduced Poincare GRU - the first type of non-Euclidean hyperbolic NQS in the literature. We benchmarked the performances of all four hyperbolic NQS against their Euclidean RNN/GRU counterparts in the quantum many-body settings of Heisenberg J1J2 and J1J2J3 models. Due to the hierarchical structure of these Hamiltonian systems in the form of various competing next nearest neighbor interactions, hyperbolic NQS were shown to definitively outperform Euclidean NQS. More details can be found in arxiv:2604.24337.
 
--  `1d_j1j2_inference_RNN_architecture.ipynb`: Inference notebook for the Heisenberg J1J2 model showing the performances of three RNN variants (out of the 6 NQS ansatzes): Euclidean RNN, Poincare RNN, Lorentz RNN, at four different couplings J2=0.0, 0.2, 0.5, 0.8.
+- `1d_j1j2_inference_RNN_architecture.ipynb`: Inference notebook for the Heisenberg J1J2 model showing the performances of three RNN variants (out of the 6 NQS ansatzes): Euclidean RNN, Poincare RNN, Lorentz RNN, at four different couplings J2=0.0, 0.2, 0.5, 0.8.
   
--   `1d_j1j2_inference_GRU_architecture.ipynb`: Inference notebook for the Heisenberg J1J2 model showing the performances of the three GRU variants (out of the 6 NQS ansatzes): Euclidean GRU, Poincare GRU, Lorentz GRU at four different couplings J2=0.0, 0.2, 0.5, 0.8.
+- `1d_j1j2_inference_GRU_architecture.ipynb`: Inference notebook for the Heisenberg J1J2 model showing the performances of the three GRU variants (out of the 6 NQS ansatzes): Euclidean GRU, Poincare GRU, Lorentz GRU at four different couplings J2=0.0, 0.2, 0.5, 0.8.
 
--   -   `1d_j1j2j3_inference_RNN_architecture.ipynb`:  Inference notebook for the Heisenberg J1J2J3 model showing the performances of the three GRU variants (out of the 6 NQS ansatzes): Euclidean RNN, Poincare RNN, Lorentz RNN at four different couplings (J2,J3)=(0.0,0.5), (0.2,0.2),  (0.2,0.5), (0.5,0.2).
+- `1d_j1j2j3_inference_RNN_architecture.ipynb`:  Inference notebook for the Heisenberg J1J2J3 model showing the performances of the three RNN variants (out of the 6 NQS ansatzes): Euclidean RNN, Poincare RNN, Lorentz RNN at four different couplings (J2,J3)=(0.0,0.5), (0.2,0.2),  (0.2,0.5), (0.5,0.2).
 
--   `1d_j1j2j3_inference_GRU_architecture.ipynb`:  Inference notebook for the Heisenberg J1J2J3 model showing the performances of the three GRU variants (out of the 6 NQS ansatzes): Euclidean GRU, Poincare GRU, Lorentz GRU at four different couplings (J2,J3)=(0.0,0.5), (0.2,0.2),  (0.2,0.5), (0.5,0.2).
+- `1d_j1j2j3_inference_GRU_architecture.ipynb`:  Inference notebook for the Heisenberg J1J2J3 model showing the performances of the three GRU variants (out of the 6 NQS ansatzes): Euclidean GRU, Poincare GRU, Lorentz GRU at four different couplings (J2,J3)=(0.0,0.5), (0.2,0.2),  (0.2,0.5), (0.5,0.2).
 
 - `utility_poincare`: contains the Pytorch codes used to construct Poincare RNN/GRU NQS. These are constructed from scratch, with all necessary mathematical operations (Mobius addition, multiplication, nonlinear activation, parallel transport, exponential/logarithm maps) in the Poincare disk defined in the file `util_torch_poincare.py`.
   
