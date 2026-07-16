@@ -12,12 +12,12 @@ This repo contains the codes and trained neural network weights for the work 260
 
 - Lorentz NQS (J1J2 system)
 `import sys
-sys.path.append('/kaggle/working/hypnqs_lorentz_poincare/utility_lorentz')
+sys.path.append('/hypnqs_lorentz_poincare/utility_lorentz')
 from j1j2_train_loop_lorentz import *`
 
 - Poincare NQS (J1J2 system):
 `import sys
-sys.path.append('/kaggle/working/hypnqs_lorentz_poincare/utility_poincare')
+sys.path.append('/hypnqs_lorentz_poincare/utility_poincare')
 from j1j2_hyprnn_train_loop import *`
 
 
